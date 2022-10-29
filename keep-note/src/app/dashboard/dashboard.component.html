@@ -1,5 +1,5 @@
 <div class="searchBox">
-    <input type="text" placeholder="Search Note" [(ngModel)]='searchText'>
+    <input type="text" placeholder="Search Note" [(ngModel)]='searchText' (keyup) = "displayAllNotes()">
     <button (click) = "searchNote()" type = button>Search</button>
 </div>
 <div class="grid">
