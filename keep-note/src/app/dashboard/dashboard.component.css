@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: 15% 15% 15% 15% 15%;
     column-gap: 80px;
     padding: 60px;
 }
@@ -14,4 +14,12 @@
 .grid-item div {
     padding: 25px;
     text-align: center;
+}
+
+.searchBox {
+    margin: 15px auto;
+    border: 2px solid lightblue;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
 }
