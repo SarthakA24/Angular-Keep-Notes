@@ -1,3 +1,7 @@
+<div>
+    <input type="text" placeholder="Search Note" [(ngModel)]='searchText'>
+    <button (click) = "searchNote()" type = button>Search</button>
+</div>
 <div class="grid">
     <div *ngFor="let note of noteDetails" class="grid-item">
         <div><b>{{note.title}}</b></div>
