@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Note } from '../model/note';
+import { NOTES } from '../model/notes';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  noteDetails: Note[] = NOTES;
 
   constructor() { }
 
