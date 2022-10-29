@@ -1,4 +1,6 @@
 h3 {
     background-color: blue;
     color: white;
+    margin: 0;
+    padding: 20px;
 }
