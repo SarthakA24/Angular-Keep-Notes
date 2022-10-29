@@ -17,7 +17,12 @@ export class DashboardComponent implements OnInit {
     } else {
       this.noteDetails = NOTES;
     }
+  }
 
+  displayAllNotes() {
+    if (this.searchText == "") {
+      this.noteDetails = NOTES;
+    }
   }
 
   constructor() { }
