@@ -1,6 +1,17 @@
 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    column-gap: 50px;
-    row-gap: 20px;
+    column-gap: 80px;
+    padding: 60px;
+}
+
+.grid-item {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px lightblue;
+}
+
+.grid-item div {
+    padding: 25px;
+    text-align: center;
 }
