@@ -9,6 +9,16 @@ import { NOTES } from '../model/notes';
 })
 export class DashboardComponent implements OnInit {
   noteDetails: Note[] = NOTES;
+  searchText: string = "";
+
+  searchNote() {
+    if (this.searchText != "" || this.searchText != null || this.searchText != undefined) {
+      this.noteDetails = NOTES.filter(note => note.title?.startsWith(this.searchText));
+    } else {
+      this.noteDetails = NOTES;
+    }
+
+  }
 
   constructor() { }
 
