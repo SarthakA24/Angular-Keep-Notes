@@ -1,1 +1,6 @@
-<p>dashboard works!</p>
+<div>
+    <div *ngFor="let note of noteDetails">
+        <div>{{note.title}}</div>
+        <div>{{note.content}}</div>
+    </div>
+</div>
